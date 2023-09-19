@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./lock.png" type="image/x-icon" />
+    <title>Text Encryption</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Text Encryption and Decryption</h1>
+      <div class="input-container">
+        <textarea
+          id="inputText"
+          class="text-input"
+          placeholder="Enter text"
+        ></textarea>
+        <input
+          type="number"
+          id="shift"
+          class="shift-input"
+          placeholder="Shift value"
+        />
+        <button onclick="encryptText()" class="encrypt-button">Encrypt</button>
+        <button onclick="decryptText()" class="decrypt-button">Decrypt</button>
+      </div>
+      <h2>Result:</h2>
+      <p id="result" class="result-text"></p>
+      <div class="links">
+        <!-- Link to GitHub repository for this package -->
+        <a
+          href="https://github.com/Mohammad-Shoeb-Faizan/encrypt-text"
+          target="_blank"
+          >GitHub Repository</a
+        >
+        <!-- Link to npm package page for this package -->
+        <a
+          href="https://www.npmjs.com/package/text-encryption-service-v1"
+          target="_blank"
+          >npm Package</a
+        >
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
